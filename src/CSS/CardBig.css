@@ -8,6 +8,10 @@
   margin: 5px;
   color: #e7e8e9;
   box-shadow: inset 0 -3vw 1vw rgb(33 33 33 / 75%);
+  transition: 0.9s;
+}
+.cardbig:hover {
+  box-shadow: inset 1vh 100vw 3vw rgb(33 33 33 / 70%);
 }
 
 .cardbig-header {
