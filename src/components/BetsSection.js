@@ -31,7 +31,7 @@ function BetsSection(props) {
       if (betcards.length !== 0 && stake > 0.01) {
         if (OverallOdds < 150) {
           axios
-            .post("http://127.0.0.1:8000/place-bet/single-bet/", {
+            .post("https://betting-1xbit.herokuapp.com/place-bet/single-bet/", {
               fixture:
                 betcards["0"].Matchtitle +
                 ": " +
@@ -63,7 +63,7 @@ function BetsSection(props) {
       if (betcards.length !== 1 && stake > 0.01) {
         if (OverallOdds < 150) {
           axios
-            .post("http://127.0.0.1:8000/place-bet/multi-bet/", {
+            .post("https://betting-1xbit.herokuapp.com/place-bet/multi-bet/", {
               fixture: JSON.stringify(betcards),
               bet_amount: stake,
               odds: OverallOdds,
