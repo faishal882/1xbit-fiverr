@@ -1,0 +1,27 @@
+.toto {
+ margin-top: 110px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+/* .totobig {
+ width: 40%;
+} */
+.totosmall {
+ width: 65%;
+}
+
+.totolist {
+ display: flex;
+ flex-direction: row;
+ /* justify-content: space-between; */
+}
+
+@media (max-width: 940px) {
+  .toto {
+   margin-top: 65px;
+  }
+  .totosmall {
+   width: 100%;
+  }
+}

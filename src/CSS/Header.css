@@ -1,0 +1,106 @@
+.header {
+  margin-top: 30px;
+  top: 0px;
+  background: #212121;
+  color: white;
+  width: 100%;
+  position: fixed;
+  height: 80px;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header-logo {
+  width: 30%;
+}
+.logo {
+  height: 40px;
+  width: 90%;
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-right: 50px;
+}
+.nav-links {
+  width: 70%;
+  align-items: flex-end;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  margin-right: 55px;
+  justify-content: space-between;
+}
+
+/* nav li {
+  margin-left: 1.5rem;
+} */
+
+.link {
+  text-decoration: none;
+  align-items: center;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.link:hover {
+  color: #ec7018;
+}
+
+.link:focus {
+  color: #ec7018;
+}
+.header-mobile-menu {
+  /* padding: 10px; */
+  /* text-align: center; */
+  margin-top: 20px;
+}
+.header-mobile-menu-button {
+  background: none;
+  text-decoration: none;
+  color: #fff;
+  /* padding-right: 10px; */
+  font-family: "Roboto", sans-serif;
+  /* font-size: 1.15rem; */
+  font-weight: 400;
+}
+
+.header-mobile-menu-button:hover {
+  color: #ec7018;
+}
+.header-mobile-menu-button:focus {
+  color: #ec7018;
+}
+.login-icon {
+  font-size: 29px;
+  padding: 5px;
+  line-height: 0;
+  font-weight: 500;
+}
+
+.betcounter {
+  padding: 0px 2px;
+  margin-left: -15px;
+  font-size: 11px;
+  position: absolute;
+  border: green 2px solid;
+  background: green;
+  border-radius: 50%;
+}
+@media (max-width: 940px) {
+  .header {
+    margin-top: 0px;
+    justify-content: space-between;
+    height: auto;
+  }
+  .logo {
+    margin-top: auto;
+    padding: 5px;
+  }
+}

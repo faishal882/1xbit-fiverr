@@ -1,0 +1,76 @@
+.container-sports {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 31px;
+}
+
+.sport-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.sport-options-button {
+  margin: 5px 10px;
+  font-family: "Roboto", sans-serif;
+  height: 23px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgb(216, 204, 204);
+  font-size: 13px;
+  background: #212121;
+}
+.sport-options-button:hover,
+.sport-options-button:focus {
+  border-bottom: 2px solid #ec7018;
+}
+
+.sport-options::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-scroll {
+  background: #212121;
+  opacity: 1;
+  border: none;
+  margin: 10px 10px;
+  /* margin-top: 10px; */
+  color: white;
+}
+
+.arrow {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.sport-options-text {
+  display: flex;
+  flex-direction: row;
+  line-height: 0;
+}
+
+.sport-icon {
+  line-height: 0;
+  padding-right: 3px;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.sport-sub-text {
+  margin-top: 6px;
+  font-family: "Roboto", sans-serif;
+}

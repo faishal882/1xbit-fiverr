@@ -1,0 +1,191 @@
+.league {
+  box-sizing: border-box;
+  width: 100%;
+  background: #d2d2d2;
+  color: #444444;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.league-name {
+  width: 45%;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px;
+  padding-left: 25px;
+  text-align: left;
+}
+
+.league-odd-name {
+  width: 27%;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 8px;
+  text-align: left;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.league-odd-name-text {
+  width: 33%;
+  text-align: center;
+}
+
+.league-details {
+  /* height: 100px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.league-match {
+  border-right: 1px solid #d2d2d2;
+  width: 45%;
+  padding-top: 5px;
+}
+.league-match:hover {
+  background: #dedede;
+  text-decoration: underline;
+}
+
+.league-team {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 3px;
+  margin-left: 25px;
+  text-align: left;
+  text-transform: capitalize;
+  color: #444444;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* .league-team:hover {
+  color: #ec7018;
+} */
+
+.league-team-score {
+  font-size: 13px;
+  font-weight: 400;
+}
+.league-team-score-stat {
+  display: inline;
+  padding: 0px 5px;
+}
+.league-match-status {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  margin: 4px 0px;
+  margin-left: 20px;
+  width: 70%;
+}
+
+.league-more {
+  display: inline-block;
+  width: 19%;
+  background: #fff;
+  font-size: 11px;
+  text-align: right;
+}
+.league-more:hover,
+.show {
+  color: #ec7018;
+}
+
+.league-odd {
+  border-right: 1px solid #d2d2d2;
+  width: 27%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.league-odd:hover {
+  background: #dedede;
+}
+
+.league-odd-number {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  width: 30%;
+  text-align: center;
+  margin: auto 7px;
+  background: #ededed;
+  padding: 10px;
+  border-radius: 5px;
+}
+.league-odd-number:hover {
+  background: #d2d2d2;
+}
+
+.livebets-more {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.livebets-name {
+  border: 1px solid #d2d2d2;
+  text-align: left;
+  padding: 5px 25px;
+  font-size: 13px;
+  color: #ec7018;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.odds-more-button {
+  font-size: 11px;
+  color: #444444;
+  background-color: #fff;
+}
+.odds-more {
+  margin: 0px 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.odds-more-name {
+  text-align: left;
+  width: 90%;
+  font-size: 13px;
+  padding: 5px 20px;
+  border: 1px solid #444444;
+}
+.odds-more-value {
+  text-align: right;
+  width: 10%;
+  font-size: 13px;
+  padding: 5px 20px;
+  border: 1px solid #444444;
+}
+.odds-more-name:hover,
+.odds-more-value:hover {
+  background: #d2d2d2;
+}
+
+@media (max-width: 940px) {
+  .league-odd-number {
+    margin: auto 3px;
+  }
+  .livebets-more {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .league-odd-name {
+    width: 50%;
+  }
+  .league-odd {
+    width: 50%;
+  }
+  .league-name {
+    width: 50%;
+  }
+  .league-match {
+    width: 50%;
+  }
+}

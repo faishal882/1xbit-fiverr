@@ -1,0 +1,62 @@
+.footer {
+ background: url("../static/footer_background.jpg");
+ height: 250px;
+}
+
+.footer-flex {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ color: #fff;
+ font-size: 15px;
+ padding: 25px;
+ text-transform: uppercase;
+ text-align: left;
+}
+
+.footer-1xbit {
+ width: 20%;
+}
+
+.footer-header {
+ width: 15%;
+ padding-bottom: 5px;
+ border-bottom: 3px solid #ec7018;
+}
+
+.footer-list {
+ list-style: none;
+}
+
+.footer-list-link {
+ padding: 13px 0px;
+ text-align: left;
+}
+
+.footer-sublinks-link {
+ color: #fff;
+ text-decoration: none;
+ text-transform: capitalize;
+ font-size: 13px;
+ font-weight: 400;
+}
+.footer-sublinks-link:hover {
+ color: #ec7018;
+ border-bottom: 1px solid #ec7018;
+}
+.footer-betting {
+ width: 20%;
+}
+
+.footer-games {
+ width: 20%;
+}
+
+.footer-links {
+ width: 20%;
+}
+
+.footer-apps {
+ width: 20%;
+}
+

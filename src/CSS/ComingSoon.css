@@ -1,0 +1,28 @@
+.coming-soon {
+  width: 100%;
+  min-height: 450px;
+  background: #fff;
+}
+
+.coming-soon-header {
+  padding-top: 200px;
+  text-align: center;
+  color: #ec7018;
+}
+
+.coming-soon-text {
+ color: #424242;
+}
+
+@media (max-width: 940px) {
+  .coming-soon {
+   min-height: 300px;
+  }
+  .coming-soon-header {
+   padding-top: 130px;
+   font-size: 25px;
+  }
+  .coming-soon-text {
+   font-size: 15px;
+  }
+}

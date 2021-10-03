@@ -1,0 +1,8 @@
+.register {
+ height: 355px;
+ width: 255px;
+ margin: 10px 20px;
+ background: rgba(26,26,26,0.85);
+ color: white;
+ font-size: 20px;
+}

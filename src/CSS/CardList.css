@@ -1,0 +1,12 @@
+.cardlist {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3px;
+  margin: 0px 7px;
+}
+
+@media (max-width: 940px) {
+  .cardlist {
+    margin: 0px;
+  }
+}
