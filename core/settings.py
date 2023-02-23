@@ -37,7 +37,7 @@ SECRET_KEY = 'hdh@5p23ethiva!uee6m(b=tzc-#gmwv7bwu(l)+ks)vl54qgq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['betting-1xbit.herokuapp.com', "127.0.0.1", "'http://localhost:3000"]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
