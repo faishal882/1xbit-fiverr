@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import django_heroku
+# import django_heroku
 import dotenv
 import os
 from pathlib import Path
@@ -206,6 +206,6 @@ JAZZMIN_UI_TWEAKS = {
     "actions_sticky_top": True
 }
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 options = DATABASES['default'].get('OPTIONS', {})
 options.pop('sslmode', None)
