@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "../CSS/BetsSection.css";
-
+import { BACKEND_URL } from "./utils"
 import { useStateValue } from "./StateProvider";
 import { getOddsTotal } from "./reducer";
 
@@ -31,7 +31,7 @@ function BetsSection(props) {
       if (betcards.length !== 0 && stake > 0.01) {
         if (OverallOdds < 150) {
           axios
-            .post("https://betting-1xbit.herokuapp.com/place-bet/single-bet/", {
+            .post(`${BACKEND_URL}/place-bet/single-bet/`, {
               fixture:
                 betcards["0"].Matchtitle +
                 ": " +
@@ -63,7 +63,7 @@ function BetsSection(props) {
       if (betcards.length !== 1 && stake > 0.01) {
         if (OverallOdds < 150) {
           axios
-            .post("https://betting-1xbit.herokuapp.com/place-bet/multi-bet/", {
+            .post(BACKEND_URL, {
               fixture: JSON.stringify(betcards),
               bet_amount: stake,
               odds: OverallOdds,

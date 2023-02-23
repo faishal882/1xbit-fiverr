@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../CSS/LiveBets.css";
-
+import { BET_API_URL } from "./utils";
 import BetsSection from "./BetsSection";
 import SportsList from "./SportsList";
 import SportsBookBetsCard from "./SportsBookBetsCard";
+import TrialBetCard from "./TrialBetCard";
 
 function SportsBook(props) {
   const [apiEndpoint, setApiEndpoint] = useState("soccer");
@@ -12,16 +13,14 @@ function SportsBook(props) {
 
   useEffect(() => {
     axios
-      .get(
-        `https://www.goalserve.com/getfeed/9055300f90874db37f7808d96de6b81a/getodds/soccer?cat=${apiEndpoint}_10&ts=${1631638400}&bm=105&json=1`
-      )
+      .get(BET_API_URL)
       .then((res) => {
         console.log(res.data.scores);
         setData({ events: res.data.scores.categories });
       })
       .catch((err) => {
         console.log(err);
-        alert(err.message);
+        alert("DUMMY DATA");
       });
   }, [data, apiEndpoint]);
 
@@ -35,13 +34,13 @@ function SportsBook(props) {
             {console.log(apiEndpoint)}
           </div>
           <div className="livebets-matches">
-            {data.events ? (
-              data.events.map((event) => {
-                return <SportsBookBetsCard key={event.gid} {...event} />;
-              })
-            ) : (
-              <p>Loading.....</p>
-            )}
+            {data.events
+              ? data.events.map((event) => {
+                  return <SportsBookBetsCard key={event.gid} {...event} />;
+                })
+              : [1, 2, 3, 4, 5].map((evnt) => {
+                  return <TrialBetCard />;
+                })}
           </div>
 
           <div className="livebets-matches"></div>

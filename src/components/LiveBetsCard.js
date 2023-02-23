@@ -25,11 +25,6 @@ function LiveBetsCard(props) {
           <div className="league-odd-name-text">12</div>
           <div className="league-odd-name-text">2x</div>
         </div>
-        {/* <div className="league-odd-name">
-          <div className="league-odd-name-text">o</div>
-          <div className="league-odd-name-text">total</div>
-          <div className="league-odd-name-text">u</div>
-        </div> */}
       </div>
 
       {data.matches
@@ -191,11 +186,6 @@ const LeagueDetails = (props) => {
             {AwayDraw.length > 0 ? AwayDraw["0"].value : "-"}
           </div>
         </div>
-        {/* <div className="league-odd">
-          <div className="league-odd-number">-</div>
-          <div className="league-odd-number">-</div>
-          <div className="league-odd-number">-</div>
-        </div> */}
       </div>
       <div className="livebets-more">
         {more === "show"

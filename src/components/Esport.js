@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../CSS/LiveBets.css";
-
+import { BET_API_URL } from "./utils";
 import BetsSection from "./BetsSection";
 import EsportBetsCard from "./EsportBetsCard";
 import TrialBetCard from "./TrialBetCard";
@@ -11,9 +11,7 @@ function Esport(props) {
 
   useEffect(() => {
     axios
-      .get(
-        `https://www.goalserve.com/getfeed/9055300f90874db37f7808d96de6b81a/getodds/soccer?cat=esports_10&ts=${1631638400}&bm=105&json=1`
-      )
+      .get(BET_API_URL)
       .then((res) => {
         console.log(res.data.scores);
         setData({ events: res.data.scores.categories });
@@ -40,13 +38,13 @@ function Esport(props) {
             </button>
           </div>
           <div className="livebets-matches">
-            {data.events ? (
-              data.events.map((event) => {
-                return <EsportBetsCard key={event.gid} {...event} />;
-              })
-            ) : (
-              <TrialBetCard />
-            )}
+            {data.events
+              ? data.events.map((event) => {
+                  return <EsportBetsCard key={event.gid} {...event} />;
+                })
+              : [1, 2, 3, 4, 5].map((evnt) => {
+                  return <TrialBetCard />;
+                })}
           </div>
 
           <div className="livebets-matches"></div>
