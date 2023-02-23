@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e5594daf.chunk.css",
+    "main.js": "/static/js/main.4a5c3924.chunk.js",
+    "main.js.map": "/static/js/main.4a5c3924.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.41117463.js",
+    "runtime-main.js.map": "/static/js/runtime-main.41117463.js.map",
+    "static/js/2.b5e34f0d.chunk.js": "/static/js/2.b5e34f0d.chunk.js",
+    "static/js/2.b5e34f0d.chunk.js.map": "/static/js/2.b5e34f0d.chunk.js.map",
+    "static/js/3.6c192996.chunk.js": "/static/js/3.6c192996.chunk.js",
+    "static/js/3.6c192996.chunk.js.map": "/static/js/3.6c192996.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.e5594daf.chunk.css.map": "/static/css/main.e5594daf.chunk.css.map",
+    "static/js/2.b5e34f0d.chunk.js.LICENSE.txt": "/static/js/2.b5e34f0d.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/1xbit_background.934577b5.jpg",
+    "static/media/Casino.ff31f9ca.jpg": "/static/media/Casino.ff31f9ca.jpg",
+    "static/media/Games.cb848143.jpg": "/static/media/Games.cb848143.jpg",
+    "static/media/Leagues.3096ff19.jpg": "/static/media/Leagues.3096ff19.jpg",
+    "static/media/Live.32e8b1a1.jpg": "/static/media/Live.32e8b1a1.jpg",
+    "static/media/Logo.8e068612.svg": "/static/media/Logo.8e068612.svg",
+    "static/media/Slots.6147b348.jpg": "/static/media/Slots.6147b348.jpg",
+    "static/media/Sports.118764cd.jpg": "/static/media/Sports.118764cd.jpg",
+    "static/media/Toto.54b327d0.jpg": "/static/media/Toto.54b327d0.jpg",
+    "static/media/VirtualSport.ba7f4c8e.jpg": "/static/media/VirtualSport.ba7f4c8e.jpg",
+    "static/media/Footer.css": "/static/media/footer_background.00ca66e4.jpg",
+    "static/media/Slider.css": "/static/media/slider-background.cb38b94b.jpg",
+    "static/media/toto1.f0e3642f.jpg": "/static/media/toto1.f0e3642f.jpg",
+    "static/media/toto2.eb13a182.jpg": "/static/media/toto2.eb13a182.jpg",
+    "static/media/toto3.6804d66c.jpg": "/static/media/toto3.6804d66c.jpg",
+    "static/media/toto4.eb13a182.jpg": "/static/media/toto4.eb13a182.jpg",
+    "static/media/toto5.f92e6d41.jpg": "/static/media/toto5.f92e6d41.jpg",
+    "static/media/toto6.acef0392.jpg": "/static/media/toto6.acef0392.jpg",
+    "static/media/totobig.c2e2fa90.jpg": "/static/media/totobig.c2e2fa90.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.41117463.js",
+    "static/js/2.b5e34f0d.chunk.js",
+    "static/css/main.e5594daf.chunk.css",
+    "static/js/main.4a5c3924.chunk.js"
+  ]
+}

@@ -9,7 +9,7 @@
 /coverage
 
 # production
-/build
+# /build
 
 # misc
 .env
@@ -55,7 +55,6 @@ media
 
 # Distribution / packaging
 .Python
-# build/
 develop-eggs/
 dist/
 downloads/
@@ -111,7 +110,7 @@ instance/
 .scrapy
 
 # Sphinx documentation
-docs/_build/
+# docs/_build/
 
 # PyBuilder
 .pybuilder/
